@@ -1,0 +1,75 @@
+{% extends 'core/base.html' %}
+
+{% block content %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="musica,instrumentos,sonidos">
+    <meta name="description" content="En esta página se ve todo lo relacionado con la música">
+    <title>LA MÚSICA</title>
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1 style="text-align: left;" >La Música</h1>
+            <nav>
+                <ul>
+                    <li><a href="#Introducción a la música">Introducción a la Música</a></li>
+                    <li><a href="{% url 'elementos' %}">Elementos de la Música</a></li>
+                    <li><a href="{% url 'generos' %}">Géneros Musicales</a></li>
+                    <li><a href="{% url 'influencia' %}">La Música en la Cultura</a></li>
+                    <li><a href="{% url 'tecnologia' %}">La Tecnología y la Música</a></li>
+                </ul>
+            </nav>
+        </header>
+        <main>
+            <p>La música ha existido desde tiempos prehistóricos, donde se utilizaban instrumentos simples como flautas de hueso y tambores. A medida que las civilizaciones avanzaban, la música se convirtió en una parte fundamental de los rituales, la religión y el entretenimiento. En la Edad Media, surgió la música sacra con la introducción del canto gregoriano. Posteriormente, en el Renacimiento y Barroco, la música se formalizó con compositores como Bach y Vivaldi.</p>
+            <figure>
+                <img width="200px" src="https://images.pexels.com/photos/57457/parade-local-trumpet-musician-ritual-57457.jpeg" alt="Hombre tocando un instrumento de viento">
+                <figcaption>Figura 1. Hombre tocando un instrumento de viento</figcaption>
+            </figure>
+            <figure>
+                <img width="500px" src="https://images.pexels.com/photos/2431071/pexels-photo-2431071.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Tribu antigua">
+                <figcaption>Fgura 2. Trubu antigua</figcaption>
+            </figure>
+            <h2><dt id="Introducción a la música">Introducción a la música</dt></h2>
+            <p>La música es una de las llamadas Bellas Artes, es decir, a un género artístico, que <strong>consiste en conseguir efectos estéticos a través de la manipulación de sonidos</strong> vocales o instrumentales, conforme a estándares culturales de ritmo, armonía y melodía.</p>
+            <p>La música es una de las mayores formas de expresión artística desde tiempos ancestrales. Además <strong>constituye el sostén de una gigantesca industria global,</strong> ya que en la cultura tienen cabida muy distintos tipos de música, empleados con fines recreativos, ceremoniales, publicitarios o de distinta naturaleza.</p>
+            <p>Existen muchas y diversas maneras de producir música, algunas muy tradicionales como una orquesta clásica, y otras más contemporáneas como una banda de rock. Sin embargo, el principio que las guía es similar. Cada una pertenece a un contexto específico en cuanto a historia, cultura, valores y consideraciones en torno a lo que es y lo que no es el arte.</p>
+            <p>Por otro lado, la música se asocia con ciertos aspectos de la mente humana y <strong>se considera un estímulo importante para el pensamiento lógico y matemático,</strong> considera un estímulo importante para el pensamiento lógico y matemático, la adquisición del lenguaje, el desarrollo psicomotriz y otro vasto rango de actividades sociales y mentales propias del género humano. Por eso se la incluye usualmente en los distintos programas escolares.</p>
+            <figure>
+                <img width="300px" src="https://images.pexels.com/photos/19076002/pexels-photo-19076002/free-photo-of-puesta-de-sol-hombre-pared-muro.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Señor con flauta">
+                <figcaption>Figura 3. Hombre con instrumento de aire</figcaption>
+            </figure>
+        
+            <h2>La importancia de la música en la sociedad</h2>
+            <p>La música no solo es una forma de arte, sino también una herramienta para la comunicación, la expresión emocional y la cohesión social. A lo largo de la historia, ha sido utilizada para transmitir valores culturales, narrar historias y expresar emociones complejas. Además, la música tiene la capacidad de unir a las personas, creando un sentido de comunidad y pertenencia. 🎹🎻🎷</p>
+            <p>La música es una de las expresiones más fabulosas del ser humano ya que <strong>logra transmitir</strong> de manera inmediata diferentes sensaciones que otras formas de arte quizás no pueden. La música <strong>es un complejo sistema de sonidos, melodías y ritmos</strong> que el hombre ha ido descubriendo y elaborando para obtener una infinidad de posibilidades diferentes. Se estima que la música cuenta con gran importancia para el ser humano ya que le permite expresar miedos, alegrías, sentimientos muy profundos de diverso tipo. La música permite canalizar esos sentimientos y hacer que la persona aliviane sus penas o haga crecer su alegría dependiendo del caso. 🎵🎶🤍💜
+            </p>
+            <h2>Diferentes géneros musicales y su evolución</h2>
+            <video width="300px" controls src="https://videos.pexels.com/video-files/8281164/8281164-hd_1080_1920_24fps.mp4">Disfrutando de la musica</video>
+            <p>A lo largo de los siglos, la música ha evolucionado en una multitud de géneros. Desde la música clásica y el jazz, hasta el rock y la electrónica, cada género refleja los cambios culturales y sociales de su tiempo. Estos géneros no solo han cambiado con el tiempo, sino que también se han influenciado mutuamente, dando lugar a subgéneros y nuevas formas de expresión musical.
+            </p>
+            <p>La música <strong>es un lenguaje global que ha evolucionado a lo largo de los siglos,</strong> reflejando los cambios culturales, sociales y tecnológicos de cada época. Los géneros musicales emergen y se transforman, revelando la increíble capacidad humana para innovar y crear nuevas formas de expresión artística. </p>
+            <p> <strong>Los géneros musicales han surgido y evolucionado </strong> a través del poder del cambio y la búsqueda constante de nuevos sonidos. Los artistas y músicos han desafiado las normas establecidas, experimentando con el ritmo, los instrumentos, la estructura y el estilo vocal para crear algo único y nuevo. Esta evolución constante ha mantenido la música relevante e interesante.</p>
+            <figure>
+                <img width="400" src="https://images.pexels.com/photos/1763075/pexels-photo-1763075.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" alt="Concierto">
+                <figcaption>Figura 4. Personas disfrutando de un concierto</figcaption>
+            </figure>
+        </main>
+    </div>
+    <button class="scroll-to-top" onclick="scrollToTop()">↑</button>
+    <script src="{% static 'scripts.js' %}"></script> 
+    <footer>
+        <address>
+            <p>Desarrollado por: Natalia Nohemi Rubio Puente</p>
+            <p>Derechos Reservados &copy;</p>
+        </address>
+    </footer> 
+{% endblock %}
+</body>
+</html>

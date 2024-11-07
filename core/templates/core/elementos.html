@@ -1,0 +1,96 @@
+<html lang="en">
+<head>
+    {% load static %}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="{% static 'estilos.css' %}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <a href="{% url 'index' %}">Página principal</a>
+            <h1>Los Elementos de la Música</h1>
+            <ul>
+                <li>Melodía: Una secuencia organizada de notas individuales</li>
+                <li>Armonía: El sonido simultáneo de dos o más tonos</li>
+                <li>Ritmo: El tiempo en que los instrumentos permanecen vibrando o emitiendo un sonido</li>
+                <li>Forma: Un elemento de la música</li>
+                <li>Dinámica: Un elemento expresivo de la música</li>
+                <li>Timbre: La cualidad del sonido que permite distinguir los diferentes instrumentos o voces</li>
+            </ul>
+            <video width="600px" controls src="https://videos.pexels.com/video-files/3134599/3134599-hd_1920_1080_24fps.mp4">Disfrutando de la musica</video>
+        </header>
+        <main>
+            <h2 style="color: rgb(43, 34, 107);" >Melodía</h2>
+            <p>La melodía es una secuencia de notas que se percibe como una unidad completa. Es el elemento de la música que suele ser más reconocible y memorable. Ejemplos clásicos de melodía incluyen la "Oda a la Alegría" de Beethoven o "Yesterday" de The Beatles.</p>
+            <figure>
+                <img width="550px" src="https://images.pexels.com/photos/6131932/pexels-photo-6131932.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <figcaption>Figura 1. Discos de leyendas de la música</figcaption>
+            </figure>
+            <h2 style="color: darkred;" >Armonía:</h2>
+            <p>Descripción: La armonía se refiere al sonido simultáneo de dos o más tonos o notas, creando un acorde o una serie de acordes que complementan la melodía. La armonía enriquece la música, proporcionando profundidad y textura, y puede influir en el carácter emocional de una pieza.</p>
+            <p>Ejemplo: Cuando se tocan un acorde de guitarra o un coro canta en varias voces, se está creando armonía.
+            </p>
+            <h2 style="color: rgb(95, 6, 88);" >Ritmo:</h2>
+            <p>Descripción: El ritmo es el patrón de duraciones y acentos que se organizan en el tiempo en una pieza musical. Es lo que mueve la música hacia adelante y da estructura temporal a la obra. El ritmo se puede sentir en los golpes repetidos de un tambor o en la manera en que una pieza musical fluye.
+            </p>
+            <p>Ejemplo: El ritmo de una canción de rock puede ser marcado y constante, mientras que en el jazz puede ser más flexible y libre. </p>
+            <figure>
+                <pre>
+                    <strong>
+         Guitar by Harry Mason
+                              ,
+                          ,   |     
+           _,,._              |  0'     
+         ,'     `.__,--.     0'         
+        /   .--.        |           ,,, 
+        | [=========|==|==|=|==|=|==___]
+        \   "--"  __    |           ''' 
+         `._   _,'  `--'
+        ""'     ,   ,0     ,        
+        °o|         |)  |)   ,'|        
+          ____     0'   '   | 0'        
+          |  |             0'           
+         0' 0'
+                    </strong>
+                </pre>
+            </figure>
+            <h2 style="color: rgb(105, 83, 9);" >Forma:</h2>
+            <p>Descripción: La forma es la estructura o el diseño de una pieza musical, la manera en que las secciones de la música están organizadas. Puede incluir la repetición de temas, la variación, y la disposición de las partes de una composición. La forma ayuda a dar coherencia y orden a la música.</p>
+            <p>Ejemplo: Ejemplos comunes de forma musical incluyen la forma sonata, la forma binaria, y la forma ternaria.</p>
+            <figure>
+                <pre>
+                    |\                         __3__          |
+                    ____|\_______________|\_______________|_______'__|__`___|_____|___|__________
+                    ____|/___3_|________@'_\|__|_____|_____|___|___|__|__|___|_|__@'___|___|___|__
+                    ___/|____-_|____________|__|_____|____@'___|__@'_@'_@'___|_|______@'___|___|__
+                    __|_/_\__4_|___|_______@'__|____O'_________|____________O'_|__________@'___|__
+                    ___\|/_____|___|___________|_______________|_______________|_______________|__
+                        /         O'                                                  bo...@wwa.com
+                </pre>
+            </figure>
+            <h2 style="color: rgb(95, 6, 58);" >Dinámica:</h2>
+            <p>Descripción: La dinámica se refiere a las variaciones en el volumen o la intensidad de la música. Es un elemento expresivo que puede transmitir emociones y estados de ánimo, desde un susurro suave hasta un clamor fuerte. Las dinámicas son indicadas en la notación musical por términos italianos como "piano" (suave) y "forte" (fuerte).</p>
+            <p>Ejemplo: Una sinfonía puede empezar con un pasaje suave (piano) y luego aumentar su intensidad hasta un final poderoso (fortissimo).</p>
+            <figure>
+                <img width="550px" src="https://images.pexels.com/photos/111287/pexels-photo-111287.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <figcaption>Figura 2. Mujer tocando el violin</figcaption>
+            </figure>
+            <h2 style="color: rgb(117, 94, 3);" >Tempo:</h2>
+            <p>Descripción: El tempo es la velocidad a la que se ejecuta una pieza musical. Este elemento expresivo dicta el pulso o el latido de la música, y puede variar desde tempos muy lentos hasta muy rápidos. El tempo afecta la sensación general de la música y puede influir en su energía y emoción.</p>
+            <p>Ejemplo: En una partitura, el tempo puede estar indicado como "Allegro" (rápido) o "Adagio" (lento).</p>
+            <figure>
+                <img width="550px" src="https://images.pexels.com/photos/210764/pexels-photo-210764.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
+                <figcaption>Figura 3. Notas del piano</figcaption>
+            </figure>
+        </main>
+    </div>
+    <footer>
+        <address>
+            <p>Desarrollado por: Natalia Nohemi Rubio Puente</p>
+            <p>Derechos Reservados &copy;</p>
+        </address>
+    </footer>
+</body>
+</html>
