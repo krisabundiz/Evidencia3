@@ -1,109 +1,152 @@
 body {
-    background-color: #f8d7da; 
-    margin: 0;
+    background-color: #f7c9d9; 
+    color: #333;
+    line-height: 1.6;
+    padding: 0 10px;
 }
 
 .container {
-    background-color: #ffffff; 
-    padding: 20px;
-    max-width: 1200px;
-    margin: 20px auto; 
-    border-radius: 8px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff; 
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px; 
 }
 
-footer {
-    background-color: #ffffff; 
+header {
+    background-color: #fff;
+    border-top: 2px solid #333;
+    border-bottom: 2px solid #333;
+    padding: 10px 0;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+header nav ul li {
+    font-size: 14px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #922e60;
+    padding: 10px;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ff69b4; 
+}
+
+
+main {
+    background-color: #fff; 
+    padding: 20px;
     color: #333;
+    border-radius: 10px;
+}
+
+h1, h2 {
+    color: #333;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin-bottom: 15px;
+    border-bottom: 1px solid #ff69b4;
+    padding-bottom: 5px;
+}
+
+p {
+    margin-bottom: 20px;
+}
+
+figure {
     text-align: center;
-    padding: 15px;
-    border-top: 1px solid #ccc; 
-    font-size: 0.9em;
-    width: 100%; 
-    margin-top: 10px; 
+    margin: 20px 0;
+}
+
+figure img {
+    border-radius: 8px;
+    max-width: 100%;
+}
+
+figcaption {
+    color: #666;
+    font-size: 12px;
+    margin-top: 5px;
+}
+
+
+video {
+    display: block;
+    margin: 0 auto;
+    border-radius: 8px;
+}
+
+.scroll-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #ff69b4;
+    color: #fff;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: #e60073;
+}
+
+
+footer {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: #fff;
+    font-size: 14px;
+    margin-top: 20px;
 }
 
 footer p {
     margin: 5px 0;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-    display: flex;
-    gap: 10px;
-    justify-content: center;
-}
-nav ul li a {
-    color: #5c0354;
-    text-decoration: none;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
-    font-weight: bold;
-    font-family: sans-serif;
+footer address {
+    font-style: normal;
 }
 
-nav ul li a:hover {
-    background-color: rgb(197, 161, 132);
-    color: white;
-}
 
-img {
-    border-radius: 10px;
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);
-    margin: 10px 0;
-}
+@media (max-width: 768px) {
+    header nav ul {
+        flex-direction: column;
+        gap: 10px;
+    }
 
-figure {
-    margin: 20px auto;
-    text-align: left;
-    max-width: 80%;
-}
-img {
-    border-radius: 8px;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-}
-figcaption {
-    font-style: italic;
-    color: #666;
-    margin-top: 8px;
-}
+    .container {
+        width: 100%; 
+        padding: 20px;
+    }
 
-.scroll-to-top {
-    position: fixed; 
-    bottom: 20px;    
-    right: 20px;     
-    background-color: #5c0354; 
-    color: white;
-    border: none;
-    border-radius: 50%;
-    padding: 10px;
-    cursor: pointer;
-    font-size: 20px;
-    display: none; 
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
-    transition: background-color 0.3s;
-}
+    main {
+        padding: 15px;
+    }
 
-.scroll-to-top:hover {
-    background-color: rgb(197, 161, 132); 
-}
-a.button {
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    text-decoration: none;
-    font-weight: bold;
-    background-color: #a80c9b;
-    color: white;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    transition: background-color 0.3s, transform 0.2s;
-}
+    h1, h2 {
+        font-size: 18px;
+    }
 
-a.button:hover {
-    background-color: #f021bcb4; 
-    transform: scale(1.05); 
+    footer {
+        font-size: 12px;
+    }
 }
-
